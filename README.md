@@ -75,3 +75,23 @@ npm install
 npm install -g json-server
 json-server --watch [db.json](http://_vscodecontentref_/0) --port 4000
 ```
+
+## 3. Run the App
+
+```
+npm run dev
+```
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── TodoForm.js
+│   ├── TodoItem.js
+│   └── TodoList.js
+├── hooks/
+│   └── useTodoState.js
+├── App.js
+└── index.css
+```
