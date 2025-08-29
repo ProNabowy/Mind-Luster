@@ -1,52 +1,52 @@
 {
-	"tasks": [
-		{
-			"id": "9d2c",
-			"title": "Design login page",
-			"description": "Create a mockup for the new login page",
-			"column": "backlog"
-		},
-		{
-			"id": "858f",
-			"title": "Draft user survey",
-			"description": "Prepare questions for user feedback survey",
-			"column": "backlog"
-		},
-		{
-			"id": "dc11",
-			"title": "Implement authentication",
-			"description": "Add OAuth, 2 support for user logins",
-			"column": "in-progress"
-		},
-		{
-			"id": "8be1",
-			"title": "Update dependencies",
-			"description": "Upgrade project to use latest libaries",
-			"column": "in-progress"
-		},
-		{
-			"id": "2603",
-			"title": "Code cleanup",
-			"description": "Refactor code improve readability",
-			"column": "review"
-		},
-		{
-			"id": "2d17",
-			"title": "Write documentation",
-			"description": "Documnet the aPI endpoints and usage",
-			"column": "review"
-		},
-		{
-			"id": "4020",
-			"title": "Fix login bug",
-			"description": "Resolve the issue with login errors",
-			"column": "done"
-		},
-		{
-			"id": "3066",
-			"title": "Deploy to production",
-			"description": "Push the latest changes to the live server",
-			"column": "done"
-		}
-	]
+  "tasks": [
+    {
+      "id": "9d2c",
+      "title": "Design login page",
+      "description": "Create a mockup for the new login page",
+      "column": "backlog"
+    },
+    {
+      "id": "858f",
+      "title": "Draft user survey",
+      "description": "Prepare questions for user feedback survey",
+      "column": "backlog"
+    },
+    {
+      "id": "dc11",
+      "title": "Implement authentication",
+      "description": "Add OAuth, 2 support for user logins",
+      "column": "in-progress"
+    },
+    {
+      "id": "8be1",
+      "title": "Update dependencies",
+      "description": "Upgrade project to use latest libaries",
+      "column": "in-progress"
+    },
+    {
+      "id": "2603",
+      "title": "Code cleanup",
+      "description": "Refactor code improve readability",
+      "column": "review"
+    },
+    {
+      "id": "2d17",
+      "title": "Write documentation",
+      "description": "Documnet the aPI endpoints and usage",
+      "column": "review"
+    },
+    {
+      "id": "4020",
+      "title": "Fix login bug",
+      "description": "Resolve the issue with login errors",
+      "column": "done"
+    },
+    {
+      "id": "3066",
+      "title": "Deploy to production",
+      "description": "Push the latest changes to the live server",
+      "column": "done"
+    }
+  ]
 }
