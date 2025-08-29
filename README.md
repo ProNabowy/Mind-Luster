@@ -73,7 +73,7 @@ npm install --force
 
 ```
 npm install -g json-server
-json-server --watch [db.json](http://_vscodecontentref_/0) --port 4000
+json-server --watch db.json --port 4000
 ```
 
 ## Run the App
