@@ -16,6 +16,7 @@ export default function useGetTasks(searchValue = "") {
 		data: tasks = [],
 		isLoading,
 		isError,
+		isSuccess,
 	} = useQuery({
 		queryFn: () =>
 			fetch("http://localhost:4000/tasks").then((res) => res.json()),
@@ -61,5 +62,6 @@ export default function useGetTasks(searchValue = "") {
 		totalPages: Math.ceil(filteredTasks.length / pageSize),
 		page,
 		setPage,
+		isSuccess,
 	};
 }

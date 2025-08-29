@@ -1,7 +1,7 @@
 import useGetTasks from "@/hooks/useGetTasks";
 import { openFormDialog } from "@/store/slices/todoListSlice";
 import SearchSharpIcon from "@mui/icons-material/SearchSharp";
-import { InputAdornment } from "@mui/material";
+import { InputAdornment, Typography } from "@mui/material";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { StyledButton, StyledHeaderContainer, StyledInput } from "../styles";
@@ -11,8 +11,15 @@ export default function Header() {
 
 	const [value, setValue] = useState("");
 
-	const {} = useGetTasks(value);
+	const { isSuccess } = useGetTasks(value);
 
+	if (!isSuccess) {
+		return (
+			<StyledHeaderContainer>
+				<Typography color="red">Please Run The Server</Typography>
+			</StyledHeaderContainer>
+		);
+	}
 	return (
 		<StyledHeaderContainer>
 			<StyledInput

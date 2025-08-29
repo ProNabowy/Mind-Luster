@@ -9,6 +9,7 @@ This project is a **Kanban-style To-Do List Dashboard** built with React, Redux,
 ## Features
 
 ### 🗂️ Kanban Board
+
 - Tasks are organized into four columns:
   - **Backlog**
   - **In Progress**
@@ -17,23 +18,29 @@ This project is a **Kanban-style To-Do List Dashboard** built with React, Redux,
 - Each column displays its relevant tasks.
 
 ### ✏️ Task Management
+
 - **Create Task:** Add new tasks with title, description, and column assignment.
 - **Edit Task:** Update task details and move tasks between columns.
 - **Delete Task:** Remove tasks from the board.
 
 ### 🔄 Drag-and-Drop
+
 - Move tasks between columns using drag-and-drop (powered by `react-beautiful-dnd`).
 
 ### 🔍 Search
+
 - Search tasks by title or description using the search bar.
 
 ### 📄 Pagination
+
 - Paginate the task list to improve performance and usability (pagination is currently global).
 
 ### ⚡ React Query Caching
+
 - Efficient data fetching and caching for tasks using React Query.
 
 ### 🖥️ Responsive UI
+
 - Built with Material UI and custom styles for a clean, responsive interface.
 
 ---
@@ -57,5 +64,63 @@ This project is a **Kanban-style To-Do List Dashboard** built with React, Redux,
 ## 🚀 Getting Started
 
 ### 1. Install Dependencies
-```sh
-npm install
+
+```
+npm install --force
+```
+
+## Start the Mock API
+
+```
+npm install -g json-server
+json-server --watch db.json --port 4000
+```
+
+## Run the App
+
+```
+npm run dev
+```
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── TodoForm.js
+│   ├── TodoItem.js
+│   └── TodoList.js
+├── hooks/
+│   └── useTodoState.js
+├── App.js
+└── index.css
+```
+## API Schema
+
+```
+{
+  "id": "string",
+  "title": "string",
+  "description": "string",
+  "column": "backlog | in-progress | review | done"
+}
+```
+## Development Environment
+
+- Node.js v18+
+- npm v9+
+- Vite for development and building
+- ESLint for code linting
+- Prettier for code formatting
+
+## Code Quality
+
+- ESLint configuration for code quality
+- Prettier for consistent code formatting
+- PropTypes for type checking
+- Comprehensive component documentation
+- Performance optimizations with React.memo and custom hooks
+<img src="https://t.bkit.co/w_6803b7c8de4e8.gif" />
+## License
+
+MIT
