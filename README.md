@@ -69,14 +69,14 @@ This project is a **Kanban-style To-Do List Dashboard** built with React, Redux,
 npm install
 ```
 
-## 2. Start the Mock API
+## Start the Mock API
 
 ```
 npm install -g json-server
 json-server --watch [db.json](http://_vscodecontentref_/0) --port 4000
 ```
 
-## 3. Run the App
+## Run the App
 
 ```
 npm run dev
@@ -95,3 +95,33 @@ src/
 ├── App.js
 └── index.css
 ```
+## API Schema
+
+```
+src/
+{
+  "id": "string",
+  "title": "string",
+  "description": "string",
+  "column": "backlog | in-progress | review | done"
+}
+```
+## Development Environment
+
+- Node.js v18+
+- npm v9+
+- Vite for development and building
+- ESLint for code linting
+- Prettier for code formatting
+
+## Code Quality
+
+- ESLint configuration for code quality
+- Prettier for consistent code formatting
+- PropTypes for type checking
+- Comprehensive component documentation
+- Performance optimizations with React.memo and custom hooks
+<img src="https://t.bkit.co/w_6803b7c8de4e8.gif" />
+## License
+
+MIT
