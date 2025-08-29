@@ -98,7 +98,6 @@ src/
 ## API Schema
 
 ```
-src/
 {
   "id": "string",
   "title": "string",
