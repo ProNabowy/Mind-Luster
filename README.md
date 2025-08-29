@@ -68,3 +68,10 @@ This project is a **Kanban-style To-Do List Dashboard** built with React, Redux,
 ```
 npm install
 ```
+
+## 2. Start the Mock API
+
+```
+npm install -g json-server
+json-server --watch [db.json](http://_vscodecontentref_/0) --port 4000
+```
