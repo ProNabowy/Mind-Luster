@@ -66,7 +66,7 @@ This project is a **Kanban-style To-Do List Dashboard** built with React, Redux,
 ### 1. Install Dependencies
 
 ```
-npm install
+npm install --force
 ```
 
 ## Start the Mock API
